@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .chat-container {
+            height: 500px;
+            padding: 20px;
+            overflow-y: scroll;
+        }
+        .message {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            max-width: 75%;
+        }
+        .bot-message {
+            background-color: #f0f0f0;
+        }
+        .user-message {
+            background-color: #1abc9c;
+            color: white;
+            float: right;
+        }
+        .input-group {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="chat-container">
+                <div class="message bot-message">Hi, I'm a chatbot. How can I help you today?</div>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Type your message...">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
